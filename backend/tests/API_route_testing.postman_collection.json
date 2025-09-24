@@ -41,7 +41,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/login?Content-Type=application/json",
+					"raw": "http://127.0.0.1:8080/login?Content-Type=application/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -49,7 +49,7 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"login"
 					],
@@ -87,7 +87,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/patients?Content-Type=application/json",
+					"raw": "http://127.0.0.1:8080/patients?Content-Type=application/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -95,7 +95,7 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"patients"
 					],
@@ -116,8 +116,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Message returned\", function () {\r",
@@ -144,7 +144,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/add_patient? Content-Type=application/json",
+					"raw": "http://127.0.0.1:8080/add_patient? Content-Type=application/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -152,7 +152,7 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"add_patient"
 					],
@@ -201,7 +201,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/update_patient/1?Content-Type=application/json",
+					"raw": "http://127.0.0.1:8080/update_patient/1?Content-Type=application/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -209,7 +209,7 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"update_patient",
 						"1"
@@ -259,7 +259,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/add_visit?Content-Type=applicaiton/json",
+					"raw": "http://127.0.0.1:8080/add_visit?Content-Type=applicaiton/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -267,7 +267,7 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"add_visit"
 					],
@@ -303,7 +303,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/visits?Content-Type=application/json",
+					"raw": "http://127.0.0.1:8080/visits?Content-Type=application/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -311,7 +311,7 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"visits"
 					],
@@ -359,7 +359,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/update_visit/1?Content-Type=application/json",
+					"raw": "http://127.0.0.1:8080/update_visit/1?Content-Type=application/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -367,7 +367,7 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"update_visit",
 						"1"
@@ -404,7 +404,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/prescriptions?Content-Type=application/json",
+					"raw": "http://127.0.0.1:8080/prescriptions?Content-Type=application/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -412,7 +412,7 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"prescriptions"
 					],
@@ -461,7 +461,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/add_prescription?Content-Type=application/json",
+					"raw": "http://127.0.0.1:8080/add_prescription?Content-Type=application/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -469,7 +469,7 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"add_prescription"
 					],
@@ -518,7 +518,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/update_prescription/1?Content-Type=application/json",
+					"raw": "http://127.0.0.1:8080/update_prescription/1?Content-Type=application/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -526,7 +526,7 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"update_prescription",
 						"1"
@@ -567,7 +567,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/delete_visit/1?Content-Type=application/json",
+					"raw": "http://127.0.0.1:8080/delete_visit/1?Content-Type=application/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -575,7 +575,7 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"delete_visit",
 						"1"
@@ -616,7 +616,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/delete_prescription/1?Content-Type=application/json",
+					"raw": "http://127.0.0.1:8080/delete_prescription/1?Content-Type=application/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -624,7 +624,7 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"delete_prescription",
 						"1"
@@ -665,7 +665,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/delete_patient/1?Content-Type=application/json",
+					"raw": "http://127.0.0.1:8080/delete_patient/1?Content-Type=application/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -673,10 +673,212 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"delete_patient",
 						"1"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_user_request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Message returned\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"message\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"user_demo\",\r\n    \"password\":\"1245\",\r\n    \"role\":\"doctor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/create_user?Content-Type=application/json",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"create_user"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users_request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"users\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"users\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_user_request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Message returned\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"message\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"123Doctor\",\r\n    \"password\": \"doctor123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/update_user/3?Content-Type=application/json",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"update_user",
+						"3"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_user_request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Message returned\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"message\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/delete_user/3?Content-Type=application/json",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"delete_user",
+						"3"
 					],
 					"query": [
 						{
@@ -713,7 +915,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/logout?Content-Type=application/json",
+					"raw": "http://127.0.0.1:8080/logout?Content-Type=application/json",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -721,7 +923,7 @@
 						"0",
 						"1"
 					],
-					"port": "5000",
+					"port": "8080",
 					"path": [
 						"logout"
 					],

@@ -125,7 +125,7 @@ def login():
         return jsonify({"message": "Missing username or password"}), 400
 
     user= User.query.filter_by(username=data["username"]).first()
-
+ 
     if user and check_password_hash(user.password_hash, data["password"]):
         session["user_id"] = user.id 
         return jsonify({"message": "login successful"}),200     
@@ -371,4 +371,15 @@ def delete_prescription(prescription_id):
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()
+        if not User.query.filter_by(username="admin").first():
+            default_user = User(
+                username="admin",
+                password_hash=generate_password_hash("adminpass"),
+                role="admin"
+            )
+            db.session.add(default_user)
+            db.session.commit()
+            print("Database initialized and default admin user created.")
+        else:
+            print("Database already initialized.")
     app.run(debug=True,port=8080)
